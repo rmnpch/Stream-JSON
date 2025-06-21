@@ -1,0 +1,24 @@
+{
+  "name": "stream-json",
+  "version": "1.0.0",
+  "description": "This project was created to parse large JSON files that hold location data from Google Maps Timeline History. \r Before processing and extracting the latitude and longitude positions from the data, the structure of the objects had to be determined. \r     The function keySet() takes an object or array and saves the keys of the the objects on a set. This set can be saved on a CSV file for further exploring\r For the file `20240606 Timeline.csv` most objects had latitudeE7, longitudeE7 and timestamp properties that were extracted from each object. The values were concatenated on a string that would represent each line on the ultimate CSV file.\r Once all the information has been extracted, the headers for the CSV are added using `unshift()`\r The locations array is joined with a line break between the lines and the result can be saved as a CSV file.",
+  "main": "process-large-json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmnpch/Stream-JSON.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rmnpch/Stream-JSON/issues"
+  },
+  "homepage": "https://github.com/rmnpch/Stream-JSON#readme",
+  "dependencies": {
+    "jsonstream": "^1.0.3"
+  }
+}
